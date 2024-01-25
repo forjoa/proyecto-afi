@@ -11,17 +11,19 @@
 <body>
     <div class="form-container">
         <img src="../assets/logo.png" alt="logo">
-        <form action="">
+        <form id="login-form">
             <div class="letters-container">
                 <img src="../assets/lettering-logo.png" alt="Lettering logo">
             </div>
 
             <div class="name-container">
-                <input type="text" name="name" id="name" placeholder="Usuario">
+                <img src="../assets/icons/user-filled.svg" alt="User icon">
+                <input type="text" name="name" id="name" placeholder="Usuario" autocomplete="username">
             </div>
 
             <div class="pwd-container">
-                <input type="password" name="pwd" id="pwd" placeholder="Contraseña">
+                <img src="../assets/icons/lock-filled.svg" alt="Lock icon">
+                <input type="password" name="pwd" id="pwd" placeholder="Contraseña" autocomplete="current-password">
             </div>
 
             <div class="submit-container">
@@ -35,11 +37,13 @@
                 </div>
 
                 <div class="recover-pwd-container">
-                    <a href="/">Recuperar contraseña</a>
+                    <a href="/app/">Recuperar contraseña</a>
                 </div>
             </div>
         </form>
     </div>
+
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
