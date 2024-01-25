@@ -7,9 +7,9 @@ form.addEventListener('submit', e => {
     const pwd = document.getElementById('pwd').value
 
     if (user === 'admin' && pwd === 'admin') {
-        window.location.href = '/status.html'
+        window.location.href = '/app/statistics.html'
     } else if (user === 'worker' && pwd === '1234') {
-        window.location.href = '/routes.html'
+        window.location.href = '/app/routes.html'
     } else {
         alert('Este usuario no tiene acceso.')
     }
