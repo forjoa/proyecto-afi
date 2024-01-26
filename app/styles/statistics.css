@@ -91,3 +91,8 @@ body {
 .main-statistics div p {
     color: var(--placeholders);
 }
+
+#myChart3 {
+    display: block;
+    margin: auto;
+}

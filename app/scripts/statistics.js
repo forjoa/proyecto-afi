@@ -65,17 +65,16 @@ new Chart(ctx2, {
     ],
   },
 })
-let inversion = 1000
-let ganancia = 900
+
 new Chart(ctx3, {
-  type: 'doughnut',
+  type: 'pie',
   data: {
-    labels: ['Ganancia', 'Inversion'],
+    labels: ['Cereales 15%', 'Bebidas 30%', 'Snack 55%'],
     datasets: [
       {
         label: 'Ganancia',
-        data: [ganancia, inversion - ganancia],
-        backgroundColor: ['#1C6994', '#D5E3EC'],
+        data: [15, 30, 55], // %
+        backgroundColor: ['#001D45', '#1C6994', '#00BE62'],
       },
     ],
   },
