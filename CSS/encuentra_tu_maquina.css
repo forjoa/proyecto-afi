@@ -1,0 +1,242 @@
+:root{
+  --verdeClaro:#00BE62;
+  --azulClaro:#1C6994;
+  --blanco:#FFFFFF;
+  --negro:#000000;
+  --fuente:
+}
+    
+body {
+  margin: 0;
+}
+    
+.header {
+position: relative;
+padding: 20px;
+}
+    
+.imagen1{
+  width: 125px;
+  height: 125px;
+  flex-shrink: 0;
+}
+    
+    
+.maquina {
+ padding: 10px;
+ color: var(--negro);
+ background-color: var(--verdeClaro); 
+ display: inline-block; 
+ margin: 0; 
+ border-radius: 20px;
+ color: var(--blanco);
+  margin-right: 40px;
+}
+    
+.frase {
+  position: absolute;
+  top: 50px;
+  right: 20px; /* Ajusta el valor según tus necesidades */
+  text-align: right;
+  font-size: 25px;
+      
+}
+    
+    
+    
+.contenedor{
+  margin-top: 10px;
+  
+}
+
+.contenedor-fondo{
+  width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: auto; /* Centra la imagen horizontalmente */;
+  height: 90%;
+  filter: blur(3px); /*imagen borroso*/
+    
+      
+}
+    
+    
+.contenedor-fondo--articulo {
+  position: absolute;
+  top: 50%;
+  left: 20px; 
+  transform: translateY(-50%);
+  background-color:var(--blanco) ; 
+  color: var(--negro); /* Color del texto sobre el fondo opaco */
+  padding: 10px;
+  border-radius: 20px; 
+  font-size: 40px;
+     
+}
+    
+    
+    
+.contenedor-fondo--articulo span{
+  display: block;
+  font-weight: bold;
+  font-size: 60px; 
+  margin-bottom: 5px; 
+  color: var(--verdeClaro);
+      
+}
+    
+    
+.parrafo{
+  text-align: center;
+}
+    
+.parrafo-frases{
+  color: var(--verdeClaro);
+  font-size: 35px;
+}
+
+.contenido{
+  display: grid;  
+  grid-template-columns: repeat(3, 1fr); 
+  column-gap: 1rem; 
+  text-align: center;
+  padding: 50px;
+}
+   
+
+.snacks{
+  background-color: var(--azulClaro);
+  margin: 40px 100px 60px;
+  padding: 30px ;
+  border-radius: 10px;
+
+}
+
+
+.snacks-ima1{
+  width: 200px; 
+  height: auto;
+}
+
+.snacks-escritura{
+color: var(--blanco);
+}
+
+.fresas{
+  background-color: var(--azulClaro);
+  margin: 40px 100px 60px;
+  padding: 30px ;
+  border-radius: 10px;
+}
+
+.fresas-ima2{
+  width: 200px;
+  height: auto;
+}
+
+.fresas-escritura{
+ color: var(--blanco);
+}
+
+.sumos{
+  background-color: var(--azulClaro);
+  margin: 40px 100px 60px;
+  padding: 30px ;
+  border-radius: 10px;
+}
+
+
+.sumos-ima3{
+  width: 200px; 
+  height: auto;
+}
+
+.sumos-escritura{
+ color: var(--blanco);
+}
+
+
+.incentivo{
+  padding: 10px;
+  color: var(--negro);
+  background-color: var(--verdeClaro); 
+  display: inline-block; /* Hace que el fondo se ajuste al ancho del texto */
+  margin: 0; 
+  border-radius: 20px;
+  color: var(--blanco);
+  margin-left:  80px;
+  font-size: 30px;
+}
+
+.lema{
+ margin-right: 50px;   
+}
+
+.dcr{
+ float: right;
+ width: 500px;
+ margin-left: 100px;
+ 
+}
+
+
+.lema-team{
+  font-size: 26px;
+  text-align: left;
+  margin: 30px;
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  
+}
+
+
+/* .footer{
+  background-color: var(--azulClaro);
+  color: white;
+  padding: 20px;
+  text-align: right;
+}
+
+
+
+
+.dispensadora{
+  position: relative;
+  width: 130px; 
+  height: auto; 
+  padding: 20px;
+
+}
+
+.dispensadora-im{
+  width: 125px;
+  height: 125px;
+  flex-shrink: 0;
+}
+
+
+
+
+
+
+
+.instagram-logo,
+.whatsapp-logo,
+.email-logo,
+.instagram-parrafo,
+.whatsapp-parrafo,
+.email-parrafo {
+  float: left;
+  margin-left: 5px; 
+}
+
+
+.instagram-parrafo,
+.whatsapp-parrafo,
+.email-parrafo {
+  margin: 0; 
+
+} */
+
+
