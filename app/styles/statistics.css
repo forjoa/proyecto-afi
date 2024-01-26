@@ -68,6 +68,7 @@ body {
     top: 0px;
     z-index: 1;
 }
+
 .main-statistics {
     display: grid;
     place-items: center;
@@ -89,4 +90,3 @@ body {
 .main-statistics div p {
     color: var(--placeholders);
 }
-

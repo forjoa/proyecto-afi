@@ -20,9 +20,7 @@ new Chart(ctx, {
       {
         label: 'Cantidad de ventas',
         data: [12, 19, 31, 5, 19, 13],
-        backgroundColor: [
-          '#1C6994',
-        ],
+        backgroundColor: ['#1C6994'],
         borderWidth: 0,
         barPercentage: 0.5,
         barThickness: 40,
@@ -49,7 +47,7 @@ new Chart(ctx2, {
         label: 'Cereales',
         data: [12, 30, 9, 32, 27, 1],
         backgroundColor: '#00BE62',
-        borderColor: '#00BE62'
+        borderColor: '#00BE62',
       },
       {
         label: 'Bebidas',
@@ -59,7 +57,7 @@ new Chart(ctx2, {
       },
       {
         label: 'Snacks',
-        data: [10, 20, 30   , 40, 10, 19],
+        data: [10, 20, 30, 40, 10, 19],
         backgroundColor: '#7B97AA',
         borderColor: '#7B97AA',
       },
