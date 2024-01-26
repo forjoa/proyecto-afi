@@ -21,6 +21,9 @@
     src: url("../../assets/fonts/PangeaAfrikanTrial-Bold.woff2");
 }
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     background: linear-gradient(var(--blue), var(--green));
@@ -30,6 +33,10 @@ body {
     margin: 0px;
     font-family: "PangeoAfrikanTrial", sans-serif;
     letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
 }
 
 input[type="checkbox" i] {

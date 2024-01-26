@@ -12,6 +12,10 @@ body {
     justify-content: space-between;
     padding: 0px 20px 0px 10px;
     border-bottom: 1px solid var(--light-grey);
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .header-logo-container {
@@ -46,6 +50,9 @@ body {
     padding: 20px;
     border-radius: 10px;
     gap: 10px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    background-color: var(--white);
 }
 
 .navbar-header a {
@@ -58,5 +65,27 @@ body {
 }
 
 .navbar-header.hidden {
-    display: none;
+    top: 0px;
+    z-index: 1;
 }
+.main-statistics {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
+
+.main-statistics div {
+    border: 1px solid var(--light-grey);
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-statistics div p {
+    color: var(--placeholders);
+}
+
