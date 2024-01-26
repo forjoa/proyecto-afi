@@ -20,7 +20,7 @@ new Chart(ctx, {
     datasets: [
       {
         label: 'Cantidad de ventas',
-        data: [12, 19, 31, 5, 19, 13],
+        data: [453, 190, 312, 503, 152, 130],
         backgroundColor: ['#1C6994'],
         borderWidth: 0,
         barPercentage: 0.5,
