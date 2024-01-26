@@ -3,6 +3,7 @@ const navbar = document.getElementById('navbar')
 const logout = document.getElementById('logout-btn')
 const ctx = document.getElementById('myChart')
 const ctx2 = document.getElementById('myChart2')
+const ctx3 = document.getElementById('myChart3')
 
 burguerMenu.addEventListener('click', () => {
   navbar.classList.toggle('hidden')
@@ -60,6 +61,21 @@ new Chart(ctx2, {
         data: [10, 20, 30, 40, 10, 19],
         backgroundColor: '#7B97AA',
         borderColor: '#7B97AA',
+      },
+    ],
+  },
+})
+let inversion = 1000
+let ganancia = 900
+new Chart(ctx3, {
+  type: 'doughnut',
+  data: {
+    labels: ['Ganancia', 'Inversion'],
+    datasets: [
+      {
+        label: 'Ganancia',
+        data: [ganancia, inversion - ganancia],
+        backgroundColor: ['#1C6994', '#D5E3EC'],
       },
     ],
   },
