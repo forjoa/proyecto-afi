@@ -1,0 +1,130 @@
+:root {
+    --blue: #1C6994;
+    --dark-blue: #001D45;
+    --green: #00BE62;
+    --white: #FCFEFD;
+    --light-grey: #D5E3EC;
+    --placeholders: #7B97AA;
+}
+
+@font-face {
+    font-family: "PangeoAfrikanTrial";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../assets/fonts/PangeaAfrikanTrial-Regular.woff2");
+}
+
+@font-face {
+    font-family: "PangeoAfrikanTrialBold";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../../assets/fonts/PangeaAfrikanTrial-Bold.woff2");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(var(--blue), var(--green));
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    margin: 0px;
+    font-family: "PangeoAfrikanTrial", sans-serif;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+input[type="checkbox" i] {
+    margin: 0px;
+}
+
+input {
+    font-family: "PangeoAfrikanTrialBold", sans-serif;
+    letter-spacing: 1px;
+}
+
+input::placeholder {
+    color: var(--placeholders);
+}
+
+.form-container {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.form-container form {
+    background-color: var(--white);
+    border-radius: 15px;
+    width: 80%;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    padding: 40px 0px;
+}
+
+.letters-container {
+    display: grid;
+    place-items: center;
+    background-color: var(--light-grey);
+    aspect-ratio: 1 / 1;
+    width: 130px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.name-container,
+.pwd-container {
+    background-color: var(--light-grey);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    gap: 5px;
+}
+
+.name-container input[type='text'],
+.pwd-container input[type='password'] {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.submit-container {
+    width: 80%;
+}
+
+.submit-container input[type='submit'] {
+    background-color: var(--dark-blue);
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+}
+
+.options-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark-blue);
+    font-size: 14px;
+}
+
+.recover-pwd-container a {
+    color: var(--dark-blue);
+}
+
+@media (max-width: 412px) {
+    .options-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

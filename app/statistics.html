@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/statistics.css">
+    <title>Estadisticas</title>
+</head>
+
+<body>
+    <header class="statistics-header">
+        <div class="header-logo-container">
+            <a href="/app/statistics.html">
+                <img src="../assets/logo.png" alt="Logo icon">
+            </a>
+        </div>
+
+        <div class="hamburguer-menu" id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+    </header>
+
+    <nav class="navbar-header hidden" id="navbar">
+        <a href="/app/statistics.html">Home</a>
+        <a href="#" id="logout-btn">Log out</a>
+    </nav>
+
+    <main class="main-statistics">
+        <div class="monthly-target-container">
+            <h3>Ventas mensuales</h3>
+            <p>Aqui encontrarás las comparaciones de las ventas mensuales</p>
+            <canvas id="myChart"></canvas>
+        </div>
+    </main>
+
+    <script src="./scripts/statistics.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+                datasets: [{
+                    label: 'Cantidad de ventas',
+                    data: [12, 19, 31, 5, 19, 13],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 205, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(201, 203, 207, 0.2)'
+                    ],
+                    borderWidth: 1,
+                    barPercentage: 0.5,
+                    barThickness: 40,
+                    maxBarThickness: 40,
+                    minBarLength: 2,
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
