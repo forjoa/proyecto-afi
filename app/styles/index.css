@@ -11,14 +11,14 @@
     font-family: "PangeoAfrikanTrial";
     font-style: normal;
     font-weight: 400;
-    src: url("../../assets/fonts/PangeaAfrikanTrial-Regular.woff2");
+    src: url("../assets/fonts/PangeaAfrikanTrial-Regular.woff2");
 }
 
 @font-face {
     font-family: "PangeoAfrikanTrialBold";
     font-style: normal;
     font-weight: 900;
-    src: url("../../assets/fonts/PangeaAfrikanTrial-Bold.woff2");
+    src: url("../assets/fonts/PangeaAfrikanTrial-Bold.woff2");
 }
 
 * {
