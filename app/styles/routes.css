@@ -21,6 +21,10 @@ body {
     border-radius: 10px;
 }
 
+.map-container span {
+    color: var(--placeholders);
+}
+
 gmpx-store-locator {
     width: 100%;
     height: 100%;
