@@ -11,14 +11,13 @@ body {
 }
     
 .header {
-position: relative;
-padding: 20px;
+ padding: 10px;
 }
     
 .imagen1{
   width: 125px;
   height: 125px;
-  flex-shrink: 0;
+
 }
     
     
@@ -30,13 +29,13 @@ padding: 20px;
  margin: 0; 
  border-radius: 20px;
  color: var(--blanco);
-  margin-right: 40px;
+  margin-right: 30px;
 }
     
 .frase {
   position: absolute;
   top: 50px;
-  right: 20px; /* Ajusta el valor según tus necesidades */
+  right: 20px; 
   text-align: right;
   font-size: 25px;
       
@@ -51,7 +50,6 @@ padding: 20px;
 
 .contenedor-fondo{
   width: 100%; 
-  height: auto; 
   display: block; 
   margin: auto; /* Centra la imagen horizontalmente */;
   height: 90%;
@@ -64,10 +62,10 @@ padding: 20px;
 .contenedor-fondo--articulo {
   position: absolute;
   top: 50%;
-  left: 20px; 
+  margin-left: 175px;
   transform: translateY(-50%);
-  background-color:var(--blanco) ; 
-  color: var(--negro); /* Color del texto sobre el fondo opaco */
+  background-color: var(--blanco);
+  color: var(--negro); 
   padding: 10px;
   border-radius: 20px; 
   font-size: 40px;
@@ -92,69 +90,43 @@ padding: 20px;
     
 .parrafo-frases{
   color: var(--verdeClaro);
-  font-size: 35px;
+  font-size: 38px;
 }
 
-.contenido{
+.contenido {
   display: grid;  
   grid-template-columns: repeat(3, 1fr); 
   column-gap: 1rem; 
   text-align: center;
-  padding: 50px;
+  padding: 40px;
+  margin: auto; 
+  max-width: 1000px; 
 }
    
-
-.snacks{
+.snacks,
+.fresas,
+.sumos {
   background-color: var(--azulClaro);
-  margin: 40px 100px 60px;
-  padding: 30px ;
+  margin: 40px 20px; 
+  padding:  50px 30px; ;
   border-radius: 10px;
-
 }
 
 
-.snacks-ima1{
+.snacks-ima1,
+.fresas-ima2,
+.sumos-ima3 {
   width: 200px; 
   height: auto;
 }
 
-.snacks-escritura{
-color: var(--blanco);
+.snacks-escritura,
+.fresas-escritura,
+.sumos-escritura {
+  color: var(--blanco);
+  width: 100%;
+  height: 50%;
 }
-
-.fresas{
-  background-color: var(--azulClaro);
-  margin: 40px 100px 60px;
-  padding: 30px ;
-  border-radius: 10px;
-}
-
-.fresas-ima2{
-  width: 200px;
-  height: auto;
-}
-
-.fresas-escritura{
- color: var(--blanco);
-}
-
-.sumos{
-  background-color: var(--azulClaro);
-  margin: 40px 100px 60px;
-  padding: 30px ;
-  border-radius: 10px;
-}
-
-
-.sumos-ima3{
-  width: 200px; 
-  height: auto;
-}
-
-.sumos-escritura{
- color: var(--blanco);
-}
-
 
 .incentivo{
   padding: 10px;
@@ -169,74 +141,86 @@ color: var(--blanco);
 }
 
 .lema{
- margin-right: 50px;   
+ margin-right: 70px;  
+ position: relative;
+ top: 20px; 
 }
 
 .dcr{
  float: right;
  width: 500px;
  margin-left: 100px;
+ position: relative;
+ bottom: 90px;
  
 }
 
 
 .lema-team{
-  font-size: 26px;
+  font-size: 20px;
   text-align: left;
-  margin: 30px;
-  padding: 20px;
+  margin-left: 50px;
+  padding: 40px;
   width: 40%;
   height: auto;
   
 }
 
 
-/* .footer{
-  background-color: var(--azulClaro);
-  color: white;
-  padding: 20px;
-  text-align: right;
+footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: end;
+  background-color: var(--azulClaro); 
+  height: auto;
+  width: 100%;
+  
 }
 
-
-
-
-.dispensadora{
+.global {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
   position: relative;
-  width: 130px; 
-  height: auto; 
-  padding: 20px;
+ 
+ 
+  
+}
+
+.dispensadora {
+ 
+  width: 69%;
+  text-align: left;
+  margin-left: 30px;
 
 }
 
 .dispensadora-im{
   width: 125px;
   height: 125px;
-  flex-shrink: 0;
+  
+}
+.whatsapp,
+.instagram,
+.email {
+  display: flex;
+  align-items: center;
+  justify-self: end; 
+  
 }
 
-
-
-
-
-
-
-.instagram-logo,
 .whatsapp-logo,
-.email-logo,
-.instagram-parrafo,
-.whatsapp-parrafo,
-.email-parrafo {
-  float: left;
-  margin-left: 5px; 
+.instagram-logo,
+.email-logo {
+  margin-right: 13px;
 }
 
-
-.instagram-parrafo,
 .whatsapp-parrafo,
+.instagram-parrafo,
 .email-parrafo {
-  margin: 0; 
+  color: var(--blanco);
+  
+}
 
-} */
 
 
