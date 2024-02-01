@@ -5,9 +5,25 @@
   --negro:#000000;
   --fuente:
 }
+
+@font-face {
+  font-family: "PangeoAfrikanTrial";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/PangeaAfrikanTrial-Regular.woff2");
+}
+
+@font-face {
+  font-family: "PangeoAfrikanTrialBold";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../assets/fonts/PangeaAfrikanTrial-Bold.woff2");
+}
     
 body {
   margin: 0;
+  font-family: "PangeoAfrikanTrial", sans-serif;
+  letter-spacing: 1.5;
 }
     
 .header {
