@@ -1,9 +1,8 @@
-:root{
-  --verdeClaro:#00BE62;
-  --azulClaro:#1C6994;
-  --blanco:#FFFFFF;
-  --negro:#000000;
-  --fuente:
+:root {
+  --verdeClaro: #00BE62;
+  --azulClaro: #1C6994;
+  --blanco: #FFFFFF;
+  --negro: #000000;
 }
 
 @font-face {
@@ -19,112 +18,170 @@
   font-weight: 900;
   src: url("../assets/fonts/PangeaAfrikanTrial-Bold.woff2");
 }
-    
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: "PangeoAfrikanTrial", sans-serif;
-  letter-spacing: 1.5;
+  font-family: "PangeoAfrikanTrial", sans-serif ;
+  letter-spacing: 1.5px;
 }
-    
-.header {
- padding: 10px;
+
+header {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-    
-.imagen1{
+
+header img {
+  width: 100px;
+}
+
+header button {
+  border: none;
+  background-color: var(--verdeClaro);
+  color: var(--blanco);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  font-family:  "PangeoAfrikanTrial", sans-serif;
+}
+
+header button:hover {
+  background-color: var(--azulClaro);
+}
+
+.bar {
+  height: 50px;
+  background-color: var(--azulClaro);
+  width: 100%;
+}
+
+.hero {
+  background-image: url('../assets/fondo.jpg');
+  height: calc(100vh - 180px);
+  padding: 17%;
+}
+
+.hero h1 {
+  background-color: #ffffffc0;
+  letter-spacing: 1.5px;
+  font-size: 48px;
+  padding: 30px 60px;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.hero h1 span {
+  text-transform: uppercase;
+  color: var(--verdeClaro);
+}
+
+.imagen1 {
   width: 125px;
   height: 125px;
 
 }
-    
-    
+
 .maquina {
- padding: 10px;
- color: var(--negro);
- background-color: var(--verdeClaro); 
- display: inline-block; 
- margin: 0; 
- border-radius: 20px;
- color: var(--blanco);
+  padding: 10px;
+  color: var(--negro);
+  background-color: var(--verdeClaro);
+  display: inline-block;
+  margin: 0;
+  border-radius: 20px;
+  color: var(--blanco);
   margin-right: 30px;
 }
-    
+
 .frase {
   position: absolute;
   top: 50px;
-  right: 20px; 
+  right: 20px;
   text-align: right;
   font-size: 25px;
-      
-}
-    
-    
-    
-.contenedor{
-  margin-top: 10px;
-  
+
 }
 
-.contenedor-fondo{
-  width: 100%; 
-  display: block; 
-  margin: auto; /* Centra la imagen horizontalmente */;
-  height: 90%;
-  filter: blur(3px); /*imagen borroso*/
-    
-      
+
+
+.contenedor {
+  margin-top: 10px;
+
 }
-    
-    
+
+.contenedor-fondo {
+  width: 100%;
+  display: block;
+  margin: auto;
+  /* Centra la imagen horizontalmente */
+  ;
+  height: 90%;
+  filter: blur(3px);
+  /*imagen borroso*/
+
+
+}
+
+
 .contenedor-fondo--articulo {
   position: absolute;
   top: 50%;
   margin-left: 175px;
   transform: translateY(-50%);
   background-color: var(--blanco);
-  color: var(--negro); 
+  color: var(--negro);
   padding: 10px;
-  border-radius: 20px; 
+  border-radius: 20px;
   font-size: 40px;
-     
+
 }
-    
-    
-    
-.contenedor-fondo--articulo span{
+
+
+
+.contenedor-fondo--articulo span {
   display: block;
   font-weight: bold;
-  font-size: 60px; 
-  margin-bottom: 5px; 
+  font-size: 60px;
+  margin-bottom: 5px;
   color: var(--verdeClaro);
-      
+
 }
-    
-    
-.parrafo{
+
+
+.parrafo {
   text-align: center;
 }
-    
-.parrafo-frases{
+
+.parrafo-frases {
   color: var(--verdeClaro);
   font-size: 38px;
 }
 
 .contenido {
-  display: grid;  
-  grid-template-columns: repeat(3, 1fr); 
-  column-gap: 1rem; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
   text-align: center;
   padding: 40px;
-  margin: auto; 
-  max-width: 1000px; 
+  margin: auto;
+  max-width: 1000px;
 }
-   
+
 .snacks,
 .fresas,
 .sumos {
   background-color: var(--azulClaro);
-  margin: 40px 20px; 
-  padding:  50px 30px; ;
+  margin: 40px 20px;
+  padding: 50px 30px;
+  ;
   border-radius: 10px;
 }
 
@@ -132,7 +189,7 @@ body {
 .snacks-ima1,
 .fresas-ima2,
 .sumos-ima3 {
-  width: 200px; 
+  width: 200px;
   height: auto;
 }
 
@@ -144,42 +201,43 @@ body {
   height: 50%;
 }
 
-.incentivo{
+.incentivo {
   padding: 10px;
   color: var(--negro);
-  background-color: var(--verdeClaro); 
-  display: inline-block; /* Hace que el fondo se ajuste al ancho del texto */
-  margin: 0; 
+  background-color: var(--verdeClaro);
+  display: inline-block;
+  /* Hace que el fondo se ajuste al ancho del texto */
+  margin: 0;
   border-radius: 20px;
   color: var(--blanco);
-  margin-left:  80px;
+  margin-left: 80px;
   font-size: 30px;
 }
 
-.lema{
- margin-right: 70px;  
- position: relative;
- top: 20px; 
+.lema {
+  margin-right: 70px;
+  position: relative;
+  top: 20px;
 }
 
-.dcr{
- float: right;
- width: 500px;
- margin-left: 100px;
- position: relative;
- bottom: 90px;
- 
+.dcr {
+  float: right;
+  width: 500px;
+  margin-left: 100px;
+  position: relative;
+  bottom: 90px;
+
 }
 
 
-.lema-team{
+.lema-team {
   font-size: 20px;
   text-align: left;
   margin-left: 50px;
   padding: 40px;
   width: 40%;
   height: auto;
-  
+
 }
 
 
@@ -187,10 +245,10 @@ footer {
   display: flex;
   justify-content: space-between;
   text-align: end;
-  background-color: var(--azulClaro); 
+  background-color: var(--azulClaro);
   height: auto;
   width: 100%;
-  
+
 }
 
 .global {
@@ -198,31 +256,32 @@ footer {
   display: flex;
   justify-content: space-between;
   position: relative;
- 
- 
-  
+
+
+
 }
 
 .dispensadora {
- 
+
   width: 69%;
   text-align: left;
   margin-left: 30px;
 
 }
 
-.dispensadora-im{
+.dispensadora-im {
   width: 125px;
   height: 125px;
-  
+
 }
+
 .whatsapp,
 .instagram,
 .email {
   display: flex;
   align-items: center;
-  justify-self: end; 
-  
+  justify-self: end;
+
 }
 
 .whatsapp-logo,
@@ -235,8 +294,5 @@ footer {
 .instagram-parrafo,
 .email-parrafo {
   color: var(--blanco);
-  
+
 }
-
-
-
