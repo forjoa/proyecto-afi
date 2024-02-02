@@ -228,3 +228,51 @@ footer .contact {
   color: var(--blanco);
   text-decoration: none;
 }
+
+@media (max-width: 900px) {
+  header button {
+    font-size: 16px;
+    padding: 7px 15px;
+  }
+
+  .hero {
+    padding: 40% 15%;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+    width: auto;
+    padding: 30px 40px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .subtitle {
+    display: none;
+  }
+
+  .mission {
+    flex-direction: column;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .social-media {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .social-media a {
+    justify-content: center;
+  }
+
+  .btn-find button {
+    width: 100%;
+  }
+}
