@@ -45,6 +45,11 @@ header img {
   width: 100px;
 }
 
+header div {
+  display: flex;
+  align-items: center;
+}
+
 header button {
   border: none;
   background-color: var(--verdeClaro);
