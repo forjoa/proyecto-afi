@@ -243,6 +243,10 @@ footer .contact {
     padding: 7px 15px;
   }
 
+  header div h2 {
+    display: none;
+  }
+
   .hero {
     padding: 40% 15%;
   }
