@@ -10,7 +10,7 @@ burguerMenu.addEventListener('click', () => {
 })
 
 logout.addEventListener('click', () => {
-  window.location.href = '/app/'
+  window.location.href = 'index.html'
 })
 
 new Chart(ctx, {
