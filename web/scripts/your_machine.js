@@ -2,7 +2,7 @@ const buttons = document.querySelectorAll('button')
 
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
-    window.location.href = '/web'
+    window.location.href = 'index.html'
   })
 })
 
